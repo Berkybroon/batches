@@ -17,6 +17,4 @@ del %temp%\* /q /f /s
 del %windir%\SoftwareDistribution\Download\* /q /f /s
 del %windir%\prefetch\*.* /q /f /s
 del "%windir%\SoftwareDistribution\DataStore\Logs\edb.log"
-wmic computersystem where name="%computername%" set AutomaticManagedPagefile=False
-wmic pagefileset where name="C:\\pagefile.sys" set InitialSize=4096,MaximumSize=8192
 net start wuauserv
